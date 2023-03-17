@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-qgcr
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:c66e48173b3a4405801f5ecedd3302ee
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:a4169304fad45eb08ce351e2e3026f126623ffa496ac12c86039da47715e37e8
         name: my-python
         ports:
         - containerPort: 8081
