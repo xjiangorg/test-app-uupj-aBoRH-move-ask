@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-qgcr
+  namespace: build-e2e-emib-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:a4169304fad45eb08ce351e2e3026f126623ffa496ac12c86039da47715e37e8
+        name: my-python
+        resources: {}
+status: {}
